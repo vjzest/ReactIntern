@@ -1,0 +1,47 @@
+/* src/index.css or any CSS file you prefer */
+
+/* Import Tailwind's base styles */
+@tailwind base;
+
+/* Import Tailwind's component styles */
+@tailwind components;
+
+/* Import Tailwind's utility classes */
+@tailwind utilities;
+.dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.dashboard-item {
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+}
+
+.graph {
+  grid-column: span 3;
+  background-color: teal;
+  color: white;
+  text-align: center;
+}
+/* In your global styles (e.g., index.css) */
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.bg-teal-400.dark {
+  background-color: #2b7a77;
+}
+
+.text-white.dark {
+  color: #ffffff;
+}
